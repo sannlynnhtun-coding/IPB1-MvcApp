@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="IPB1.MvcApp.Database/IPB1.MvcApp.Database.csproj" />
+  <Project Path="IPB1.MvcApp/IPB1.MvcApp.csproj" />
+</Solution>
