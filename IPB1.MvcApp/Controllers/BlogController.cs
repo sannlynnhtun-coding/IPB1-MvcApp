@@ -2,6 +2,7 @@
 using IPB1.MvcApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Threading.Tasks;
 
 namespace IPB1.MvcApp.Controllers
@@ -20,6 +21,9 @@ namespace IPB1.MvcApp.Controllers
         public async Task<IActionResult> IndexAsync()
         {
             var lst = await _db.TblBlogs.ToListAsync();
+            Log.Verbose("test");
+            Log.Debug("test");
+            Log.Information("test");
             return View("Index", lst);
         }
 
